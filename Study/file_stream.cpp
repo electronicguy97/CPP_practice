@@ -1,7 +1,7 @@
-#include <fstream>
-#include <iostream>
-#include <iomanip>
-using namespace std;
+//#include <fstream>
+//#include <iostream>
+//#include <iomanip>
+//using namespace std;
 
 //// 파일 쓰기
 //int main()
@@ -25,33 +25,33 @@ using namespace std;
 //}
 
 // 파일 읽기
-int main()
-{
-	ifstream fin("test3.txt"); // 해당 이름 파일을 생성 후 데이터 삽입 e.g.) test3.txt <- 80 60 50 70 77 50 88 99
-	if (!fin)
-	{
-		cout << "파일을 열 수 없습니다\n";
-		return 1;
-	}
-
-	const int num = 8;
-	int test[num];
-	for (int i = 0; i < num; i++)
-		fin >> test[i];
-
-	int max = test[0];
-	int min = test[0];
-	for (int j = 0; j < num; j++) {
-		if (max < test[j])
-			max = test[j];
-		if (min > test[j])
-			min = test[j];
-		cout << "No." << j + 1 << setw(5) << test[j] << endl;
-	}
-	cout << "가장 높은 점수: " << max << endl;
-	cout << "가장 낮은 점수: " << min << endl;
-
-	fin.close();
-
-	return 0;
-}
+//int main()
+//{
+//	ifstream fin("test3.txt"); // 해당 이름 파일을 생성 후 데이터 삽입 e.g.) test3.txt <- 80 60 50 70 77 50 88 99
+//	if (!fin)
+//	{
+//		cout << "파일을 열 수 없습니다\n";
+//		return 1;
+//	}
+//
+//	const int num = 8;
+//	int test[num];
+//	for (int i = 0; i < num; i++)
+//		fin >> test[i];
+//
+//	int max = test[0];
+//	int min = test[0];
+//	for (int j = 0; j < num; j++) {
+//		if (max < test[j])
+//			max = test[j];
+//		if (min > test[j])
+//			min = test[j];
+//		cout << "No." << j + 1 << setw(5) << test[j] << endl;
+//	}
+//	cout << "가장 높은 점수: " << max << endl;
+//	cout << "가장 낮은 점수: " << min << endl;
+//
+//	fin.close();
+//
+//	return 0;
+//}
