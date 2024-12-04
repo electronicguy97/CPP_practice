@@ -1,0 +1,29 @@
+﻿// AutoProject.idl: AutoProject.exe의 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(AutoProject.tlb)입니다.
+
+[ uuid(88e18877-97b9-44fa-b6b5-438a451103bf), version(1.0) ]
+library AutoProject
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CAutoProjectDoc의 기본 디스패치 인터페이스
+
+	[ uuid(7ae1e71b-bee9-49f2-a419-103d44597bc5) ]
+	dispinterface IAutoProject
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CAutoProjectDoc에 대한 클래스 정보
+
+	[ uuid(65dd58cb-fae8-4653-8db8-b777e9ca8a93) ]
+	coclass AutoProject
+	{
+		[default] dispinterface IAutoProject;
+	};
+};
